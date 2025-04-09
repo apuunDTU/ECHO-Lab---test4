@@ -407,8 +407,8 @@ body {
 
 .modal .card-header img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 300px; /* Set a specific height */
+    object-fit: cover; /* Maintain aspect ratio */
 }
 
 .modal .card-date {
