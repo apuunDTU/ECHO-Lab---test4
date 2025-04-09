@@ -1,6 +1,6 @@
 // AI as Citizens project data
 const noteData = {
-  id: 1,
+  id: 7,
   title: "HELLO I AM JUST CHECKING WHAT HAPPENS",
   date: "14.06.2024",
   image: "assets/Test.png",
