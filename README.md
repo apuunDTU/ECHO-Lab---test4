@@ -74,17 +74,21 @@ This is the main way to add content to the website. Follow these simple steps:
 REMEMBER: You can also download one of the current files and edit it locally in your computer with Text Edit and upload it to the folder. Just remember to change the name!
 
 2. **Style the text in the card** 
-   - For bullet points: Use an array []
-   - For paragraphs: Use a string with <p> tags
+   - For bullet points: Use an array *[]*
+   - For paragraphs: Use a string with *<p>* tags
    - For single line text: Use a plain string
-  
-   If you want to change the titles of the different sections you can use this part: 
 
-sectionTitles: {
+
+If you want to change the titles of the different sections you can use the part of the code that says: 
+
+  {
+     sectionTitles: {
        topics: "Research Areas",
        lessons: "Key Learnings",
        collaborators: "Team Members"
      }
+   }
+
 
 
 3. **Add Your Project Image**
