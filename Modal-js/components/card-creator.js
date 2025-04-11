@@ -109,7 +109,7 @@ export function createLabNoteCard(noteData) {
         
         // Only adjust right column text if it overflows and not in mobile view
         if (rightOverflows && window.innerWidth > 768) {
-            const reducedSize = '0.4rem';
+            const reducedSize = '0.47rem';
             rightColumn.querySelectorAll('.topic-content, .topic-content p, .topic-content li, .topic-content div').forEach(element => {
                 element.style.fontSize = reducedSize;
             });
