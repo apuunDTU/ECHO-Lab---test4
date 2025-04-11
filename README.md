@@ -72,7 +72,7 @@ This is the main way to add content to the website. Follow these simple steps:
      }
    };
    ```
-* You can also download one of the current files and edit it in your Text Edit. 
+* You can also download one of the current files and edit it locally in your computer with Text Edit and upload it to the folder. Just remember to change the name!
 
 To style the text you can use: 
 For bullet points: Use an array []
