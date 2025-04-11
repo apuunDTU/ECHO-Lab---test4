@@ -1,6 +1,5 @@
 // Accessibility urban belonging 
 const noteData = {
-  id: 5,
   title: "Web Accessibility Assessment of The Urban Belonging Photo App",
   date: "01.11.2024",
   image: "Assets/UBworkshop.png",
