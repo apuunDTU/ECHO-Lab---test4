@@ -1,15 +1,18 @@
 # Echo Lab Website
 
-A modern research project showcase website for Echo Lab, featuring interactive lab notes cards and upcoming events.
+This is the ofical website to showcase all projects done at ECHO Lab. Each project is featured as a LAB note and includes a picture and a brief description of the project. Notes are meant to be short and concise, you can include links to documents or publications that are relevant to it.
 
-## Project Structure
+There is also a simple overview of the events.
+
+
+# Web Structure
 
 ```
 Echo Lab Website/
 ├── Assets/                  # Static assets (images, logos)
 ├── Events/                  # Events data (managed by admin)
 │   └── events.json         # List of upcoming events
-├── Projects/               # ⭐ YOUR CONTENT GOES HERE ⭐
+├── Projects/               # ⭐ NEW CONTENT GOES HERE ⭐
 │   ├── project-list.json   # List of all projects
 │   └── *.js               # Individual project files
 ├── Modal-js/               # JavaScript modules (managed by admin)
@@ -23,21 +26,8 @@ Echo Lab Website/
 └── index.html             # Main HTML file (managed by admin)
 ```
 
-## Features
 
-- Interactive lab notes cards with detailed information
-- Modal view for expanded card content
-- Upcoming events section
-- Responsive design
-- Modern UI with custom fonts (Neo Sans and Andale Mono)
-
-## Setup
-
-1. Clone the repository
-2. Open `index.html` in a web browser
-3. No additional setup required as all dependencies are included
-
-## Adding New Content
+# HOW TO ADD A NEW LAB NOTE.⭐
 
 ### ⭐ Adding a New Lab Note (Project) ⭐
 
