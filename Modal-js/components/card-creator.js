@@ -2,9 +2,18 @@ import { openModal } from './modal.js';
 
 // Function to create a lab note card
 export function createLabNoteCard(noteData) {
+    // Create a wrapper for the entire card section
+    const wrapper = document.createElement('div');
+    wrapper.style.position = 'relative';
+    wrapper.style.marginBottom = '3rem'; // Space for links
+
     const card = document.createElement('div');
     card.className = 'research-card';
     card.dataset.id = noteData.id;
+    card.style.position = 'relative';
+    card.style.height = '710px';
+    card.style.display = 'flex';
+    card.style.flexDirection = 'column';
     
     // Create card header with image
     const header = document.createElement('div');
@@ -26,10 +35,17 @@ export function createLabNoteCard(noteData) {
     // Create card content
     const content = document.createElement('div');
     content.className = 'card-content';
+    content.style.display = 'flex';
+    content.style.flexDirection = 'row';
+    content.style.flex = '1';
+    content.style.overflow = 'hidden';
+    content.style.gap = '1rem';
     
     // Left column
     const leftColumn = document.createElement('div');
     leftColumn.className = 'card-left';
+    leftColumn.style.flex = '1.1';
+    leftColumn.style.overflow = 'hidden';
     
     // Add title with word count check
     const title = document.createElement('h2');
@@ -53,34 +69,59 @@ export function createLabNoteCard(noteData) {
     // Right column
     const rightColumn = document.createElement('div');
     rightColumn.className = 'card-right';
+    rightColumn.style.flex = '1';
+    rightColumn.style.overflow = 'hidden';
+    rightColumn.style.maxHeight = '610px';
     
-    // Add research topics section
-    const topicsSection = createSection(noteData.sectionTitles.topics, noteData.researchTopics, 'text');
+    // Add sections to right column
+    const topicsSection = createSection(noteData.sectionTitles.topics, noteData.researchTopics, 'text', false);
     rightColumn.appendChild(topicsSection);
     
-    // Add objectives section
-    const objectivesSection = createSection('Objectives', [noteData.objectives], 'text');
+    const objectivesSection = createSection('Objectives', [noteData.objectives], 'text', false);
     rightColumn.appendChild(objectivesSection);
     
-    // Add methodology section
-    const methodologySection = createSection('Methodology', noteData.methodology, 'list');
+    const methodologySection = createSection('Methodology', noteData.methodology, 'list', false);
     rightColumn.appendChild(methodologySection);
     
-    // Add lessons section
-    const lessonsSection = createSection(noteData.sectionTitles.lessons, noteData.lessons, 'list');
+    const lessonsSection = createSection(noteData.sectionTitles.lessons, noteData.lessons, 'list', false);
     rightColumn.appendChild(lessonsSection);
     
-    // Add collaborators section
-    const collaboratorsSection = createSection(noteData.sectionTitles.collaborators, noteData.collaborators, 'list');
+    const collaboratorsSection = createSection(noteData.sectionTitles.collaborators, noteData.collaborators, 'list', true);
     rightColumn.appendChild(collaboratorsSection);
-    
+
     content.appendChild(leftColumn);
     content.appendChild(rightColumn);
     card.appendChild(content);
-    
+
+    // Check if content overflows and adjust if needed
+    setTimeout(() => {
+        const leftOverflows = leftColumn.scrollHeight > leftColumn.clientHeight;
+        const rightOverflows = rightColumn.scrollHeight > rightColumn.clientHeight;
+        
+        // Only adjust preview text if left column overflows
+        if (leftOverflows) {
+            const reducedSize = '0.45rem';
+            preview.style.fontSize = reducedSize;
+            preview.querySelectorAll('p').forEach(p => {
+                p.style.fontSize = reducedSize;
+            });
+        }
+        
+        // Only adjust right column text if it overflows and not in mobile view
+        if (rightOverflows && window.innerWidth > 768) {
+            const reducedSize = '0.4rem';
+            rightColumn.querySelectorAll('.topic-content, .topic-content p, .topic-content li, .topic-content div').forEach(element => {
+                element.style.fontSize = reducedSize;
+            });
+        }
+    }, 0);
+
     // Add links section
     const links = document.createElement('div');
     links.className = 'card-links';
+    links.style.position = 'absolute';
+    links.style.bottom = '-3rem';
+    links.style.left = '1.5rem';
     
     if (noteData.projectLink) {
         const projectLink = document.createElement('a');
@@ -97,24 +138,70 @@ export function createLabNoteCard(noteData) {
         publicationLink.target = '_blank';
         links.appendChild(publicationLink);
     }
-    
-    card.appendChild(links);
+
+    wrapper.appendChild(card);
+    wrapper.appendChild(links);
     
     // Add click event to open modal
     card.addEventListener('click', (e) => {
-        // Don't open modal if clicking on links
         if (!e.target.closest('a')) {
-            openModal(card);
+            const modalCard = card.cloneNode(true);
+            // Reset all styles for modal view
+            modalCard.style.height = 'auto';
+            modalCard.style.overflow = 'visible';
+            modalCard.querySelector('.card-content').style.overflow = 'visible';
+            modalCard.querySelector('.card-right').style.maxHeight = 'none';
+            modalCard.querySelector('.card-right').style.overflow = 'visible';
+            modalCard.querySelector('.card-left').style.overflow = 'visible';
+            
+            // Set fixed sizes for modal view
+            const modalTitle = modalCard.querySelector('.project-title');
+            if (modalTitle) {
+                modalTitle.style.setProperty('font-size', '2.5rem', 'important');
+            }
+
+            // Set fixed section title size for modal
+            const sectionTitles = modalCard.querySelectorAll('.section-title');
+            sectionTitles.forEach(title => {
+                title.removeAttribute('style');
+                title.style.setProperty('font-size', '1rem', 'important');
+                title.style.setProperty('margin-bottom', '1rem', 'important');
+                title.style.setProperty('font-weight', '700', 'important');
+            });
+            
+            // Reset all text elements to fixed modal sizes
+            modalCard.querySelectorAll('.topic-content, .topic-content p, .topic-content li, .topic-content div').forEach(element => {
+                element.style.setProperty('font-size', '0.85rem', 'important');
+            });
+
+            // Remove any inline styles from preview text to let CSS handle it
+            modalCard.querySelectorAll('.card-preview, .card-preview p').forEach(element => {
+                element.style.removeProperty('font-size');
+            });
+
+            // Adjust section spacing for modal view
+            const sections = modalCard.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.setProperty('margin-bottom', '1.5rem', 'important');
+                section.style.setProperty('padding-bottom', '1rem', 'important');
+            });
+
+            openModal(modalCard);
         }
     });
     
-    return card;
+    return wrapper;
 }
 
 // Helper function to create a section with title and content
-function createSection(title, content, format = 'text') {
+function createSection(title, content, format = 'text', isLast = false) {
     const section = document.createElement('div');
     section.className = 'section';
+    section.style.marginBottom = '0.5rem';
+    section.style.paddingBottom = '0.5rem';
+    if (!isLast) {
+        section.style.borderBottom = '1px solid rgba(3, 15, 79, 0.2)';
+    }
 
     const titleElement = document.createElement('h3');
     titleElement.className = 'section-title';
@@ -122,6 +209,7 @@ function createSection(title, content, format = 'text') {
 
     const contentElement = document.createElement('div');
     contentElement.className = 'topic-content';
+    contentElement.style.fontSize = '0.45rem';
 
     if (format === 'list' && Array.isArray(content)) {
         const list = document.createElement('ul');
@@ -132,8 +220,32 @@ function createSection(title, content, format = 'text') {
             list.appendChild(listItem);
         });
         contentElement.appendChild(list);
+    } else if (Array.isArray(content)) {
+        // Handle array of HTML content
+        content.forEach(item => {
+            const div = document.createElement('div');
+            div.innerHTML = item;
+            // Force consistent font size on all text elements
+            div.style.fontSize = '0.45rem';
+            div.querySelectorAll('*').forEach(el => {
+                if (el.style) {
+                    el.style.fontSize = '0.45rem';
+                }
+            });
+            contentElement.appendChild(div);
+        });
     } else {
-        contentElement.innerHTML = content;
+        // Handle single HTML content
+        const div = document.createElement('div');
+        div.innerHTML = content;
+        // Force consistent font size on all text elements
+        div.style.fontSize = '0.45rem';
+        div.querySelectorAll('*').forEach(el => {
+            if (el.style) {
+                el.style.fontSize = '0.45rem';
+            }
+        });
+        contentElement.appendChild(div);
     }
 
     section.appendChild(titleElement);
