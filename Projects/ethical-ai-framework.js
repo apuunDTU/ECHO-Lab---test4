@@ -1,6 +1,5 @@
 // Ethical AI Framework project data
 const noteData = {
-  id: 4,
   title: "ETHICAL AI FRAMEWORK",
   date: "15.01.2024",
   image: "Assets/Test.png",
