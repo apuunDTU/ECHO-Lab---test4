@@ -39,7 +39,6 @@ This is the main way to add content to the website. Follow these simple steps:
    ```javascript
    //Project tile
    const noteData = {
-     id: 5, // Use the next number after the last project
      title: "YOUR PROJECT TITLE",
      date: "DD.MM.YYYY", // Use this date format
      image: "Assets/your-image.png", // Put your image in the Assets folder
@@ -110,10 +109,15 @@ To add a new event to the website:
 
 ## Need Help?
 
-If you're having trouble:
-1. Check that your project file is in the `Projects` folder
-2. Make sure you've added your project name to project-list.json
-3. Verify that your images are in the Assets folder
-4. Contact the website administrator for assistance
+✅ Final Checklist:
+ Create a new project file in the Projects/ folder?
+ Use a clear and simple filename (like my-new-project.js)?
+ Fill in all the fields in the noteData object (title, date, image, etc.)?
+ Upload your image to the Assets/ folder?
+ Use the correct path to the image in your project file (Assets/your-image.png)?
+ Add your project name (without .js) to the project-list.json file?
 
-That's it. The process should be fairly easy but if you have any problems try asking one of the computer people from the division.
+If you cant't find the issue try asking Johan, Sarah or Ainoa. Otherwise any AI software might be useful. 
+
+That's it!
+Your LAB note should now be live on the Echo Lab website :)
