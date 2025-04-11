@@ -29,7 +29,7 @@ Echo Lab Website/
 
 This is the main way to add content to the website. Follow these simple steps:
 
-###1. Create a New Project File
+### 1. Create a New Project File
    - Go to the `Projects` folder
    - Create a new file named after your project (use simple words with hyphens, like `my-new-project.js`)
    - Copy and paste this text template into your new file:
@@ -73,37 +73,35 @@ This is the main way to add content to the website. Follow these simple steps:
 
 REMEMBER: You can also download one of the current files and edit it locally in your computer with Text Edit and upload it to the folder. Just remember to change the name!
 
-###2. Style the Text in the Card
+### 2. Style the Text in the Card
+
 You can control how the text appears in each section:
 
-Bullet points: Use an array
+*For Bullet points: Use an array*
+
 lessons: [
   "What you learned 1",
   "What you learned 2"
 ]
 
-Paragraphs: Use a string with <p> tags
+*For Paragraphs: Use a string with <p> tags*
+
 objectives: "<p>This is a paragraph of text.</p>"
-Single-line text: Use a plain string
+
+*For Single-line text: Use a plain string*
 title: "My Project Title"
-🛠️ Optional: Change Section Titles
+
+*Optional: Change Section Titles*
 
 If you'd like to customize the section headings on your card, you can edit this part:
 
-sectionTitles: {
-  topics: "Research Areas",
-  lessons: "Key Learnings",
-  collaborators: "Team Members"
-}
+<pre> ```js { sectionTitles: { topics: "Research Areas", lessons: "Key Learnings", collaborators: "Team Members" } } ``` </pre>
 
-
-
-
-###3. **Add Your Project Image**
+### 3. **Add Your Project Image**
    - Put your project image in the `Assets` folder. You can go to the folder assets and click upload new.
    - Make sure to use the correct image path in your project file
 
-###4. **Update the Project List**
+### 4. **Update the Project List**
    - Open `Projects/project-list.json`
    - Add your project name (without the .js) to the list
    - Example: `"projects": ["existing-project-1", "existing-project-2", "my-new-project"]`
@@ -123,6 +121,7 @@ To add a new event to the website:
      "title": "Your Event Title",
      "image": "Assets/your-event-image.png"
    }
+
    ```
 3. Make sure to add it inside the "events" array and separate it with a comma from the previous event
 
