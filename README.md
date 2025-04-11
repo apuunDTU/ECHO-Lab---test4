@@ -79,30 +79,37 @@ You can control how the text appears in each section:
 
 *For Bullet points: Use an array*
 
+   ```javascript
    lessons: [
   "What you learned 1",
   "What you learned 2"
 ]
+  ```
    
 *For Paragraphs: Use a string with <p> tags*
 
+   ```javascript
 objectives: "<p>This is a paragraph of text.</p>
+  ```
 
 *For Single-line text: Use a plain string*
-   
-<pre> title: "My Project Title"<pre>
+
+   ```javascript   
+title: "My Project Title"
+ ```
 
 *Optional: Change Section Titles*
 
 If you'd like to customize the section headings on your card, you can edit this part:
 
-<pre> {
+   ```javascript
   sectionTitles: {
     topics: "Research Areas",
     lessons: "Key Learnings",
     collaborators: "Team Members"
   }
-} </pre>
+} 
+ ```
 
 ### 3. **Add Your Project Image**
    - Put your project image in the `Assets` folder. You can go to the folder assets and click upload new.
