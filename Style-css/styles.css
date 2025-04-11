@@ -148,8 +148,8 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
-    row-gap: 6rem;
+    column-gap: 1.5rem;
+    row-gap: 4rem;
     max-width: 1600px;
     margin: 0 auto 10rem auto;
     padding: 0 1.5rem;
@@ -168,11 +168,11 @@ body {
     background: white;
     width: 100%;
     border-radius: 0;
-    overflow: visible;
+    overflow: hidden;
     position: relative;
     margin-bottom: 0;
     cursor: pointer;
-    height: auto;
+    height: 710px;
     display: flex;
     flex-direction: column;
 }
@@ -208,7 +208,7 @@ body {
     height: 250px;
     overflow: hidden;
     padding: 1.5rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
 }
 
 .card-header img {
@@ -233,19 +233,23 @@ body {
 
 .card-content {
     padding: 0rem 1.5rem 1rem 1.5rem;
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
     flex: 1;
+    overflow: hidden;
 }
 
 .card-left {
-    padding-right: 0.5rem;
+    flex: 1.1;
+    overflow: hidden;
 }
 
 .card-right {
-    padding-left: 0.5rem;
+    flex: 1;
+    overflow: hidden;
     border-left: 1px solid rgba(3, 15, 79, 0.2);
+    padding-left: 1rem;
 }
 
 .project-title {
@@ -253,7 +257,7 @@ body {
     font-size: 1.8rem;
     font-weight: 700;
     color: rgba(3, 15, 79, 0.9);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     line-height: 1.1;
     letter-spacing: -0.02em;
     transition: font-size 0.3s ease;
@@ -400,20 +404,20 @@ body {
 }
 
 .modal .card-header {
-    height: 300px;
-    padding: 1rem;
-    margin-bottom: 0.5rem;
+    height: 500px;
+    padding: 2rem;
+    margin-bottom: 0;
 }
 
 .modal .card-header img {
     width: 100%;
-    height: 300px; /* Set a specific height */
-    object-fit: cover; /* Maintain aspect ratio */
+    height: 100%;
+    object-fit: cover;
 }
 
 .modal .card-date {
-    left: 1rem;
-    top: 1rem;
+    left: 2rem;
+    top: 2rem;
 }
 
 .modal .project-title {
@@ -455,11 +459,12 @@ body {
 }
 
 .modal .card-preview {
-    font-size: 0.9rem;
+    font-size: 1rem !important;
     line-height: 1.5;
 }
 
 .modal .card-preview p {
+    font-size: 1rem !important;
     margin-bottom: 0.8rem;
 }
 
@@ -527,51 +532,130 @@ body {
     .grid-container {
         grid-template-columns: 1fr;
     }
+    
+    .research-card {
+        height: auto !important;
+        min-height: auto !important;
+        padding-bottom: 1rem;
+    }
+    
+    .card-content {
+        flex-direction: column;
+        gap: 2rem;
+        height: auto !important;
+        overflow: visible !important;
+        padding-bottom: 1rem;
+    }
+    
+    .card-left {
+        width: 100%;
+        order: 1;
+        overflow: visible !important;
+        height: auto !important;
+    }
+    
+    .card-right {
+        display: none;
+    }
+
+    .card-header {
+        height: 250px;
+    }
+    
+    .card-preview {
+        height: auto !important;
+        overflow: visible !important;
+    }
+    
     .modal {
-        padding: 0.5rem;
+        padding: 1rem;
     }
+    
     .modal-content {
-        margin: 0.5rem auto;
+        margin: 1rem auto;
     }
+    
     .modal .card-header {
-        height: 200px;
-        padding: 0.5rem;
+        height: 300px;
+        padding: 1rem;
+        margin-bottom: 0;
     }
+    
     .modal .project-title {
         font-size: 1.8rem;
         margin-bottom: 0.8rem;
     }
+    
     .modal .project-title.long-title {
         font-size: 1.5rem;
     }
+    
     .modal .section-title {
         font-size: 0.9rem;
     }
+    
     .modal .topic-content {
         font-size: 0.8rem;
     }
+    
     .modal .card-preview {
-        font-size: 0.85rem;
+        font-size: 0.9rem !important;
     }
+    
+    .modal .card-preview p {
+        font-size: 0.9rem !important;
+    }
+    
     .modal .card-links {
         bottom: -3rem;
     }
+    
     .modal .card-links a {
         font-size: 0.75rem;
         padding: 0.5rem 0.8rem;
     }
-    .card-content {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+    
+    .modal .research-card {
+        height: auto;
     }
-    .card-right {
-        padding-left: 0;
-        border-left: none;
-        border-top: 1px solid rgba(3, 15, 79, 0.2);
-        padding-top: 1.5rem;
-    }
+    
     .modal .card-content {
-        grid-template-columns: 1fr;
+        padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+    }
+    
+    .modal .card-left {
+        width: 100%;
+        order: 1 !important;
+        padding: 0.5rem 0;
+        overflow: visible;
+    }
+    
+    .modal .card-right {
+        display: block !important;
+        width: 100%;
+        order: 2 !important;
+        border-left: none !important;
+        border-top: none;
+        padding: 0.5rem 0;
+        overflow: visible;
+    }
+
+    .wrapper {
+        margin-bottom: 4rem;
+    }
+
+    .logo-container {
+        padding: 0.75rem 1rem;
+    }
+
+    .logo-container img {
+        height: 30px;
+    }
+
+    .logo-container a {
+        font-size: 0.7rem;
     }
 }
 
@@ -668,6 +752,7 @@ body {
 .modal .card-content {
     grid-template-columns: 1.1fr 0.9fr;
     gap: 1.5rem;
+    padding: 1rem 2rem 2rem 2rem;
 }
 
 .modal .card-left {
@@ -692,4 +777,24 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-weight: 700;
+}
+
+.modal .research-card .card-preview {
+    font-size: 1rem !important;
+    line-height: 1.5;
+}
+
+.modal .research-card .card-preview p {
+    font-size: 1rem !important;
+    margin-bottom: 0.8rem;
+}
+
+.modal .research-card .card-preview p:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 769px) {
+    .modal .card-right {
+        border-left: 1px solid rgba(3, 15, 79, 0.2);
+    }
 } 
