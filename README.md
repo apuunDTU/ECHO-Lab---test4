@@ -29,7 +29,7 @@ Echo Lab Website/
 
 This is the main way to add content to the website. Follow these simple steps:
 
-###1. **Create a New Project File**
+###1. Create a New Project File
    - Go to the `Projects` folder
    - Create a new file named after your project (use simple words with hyphens, like `my-new-project.js`)
    - Copy and paste this text template into your new file:
