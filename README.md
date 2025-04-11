@@ -95,7 +95,13 @@ title: "My Project Title"
 
 If you'd like to customize the section headings on your card, you can edit this part:
 
-<pre> ```js { sectionTitles: { topics: "Research Areas", lessons: "Key Learnings", collaborators: "Team Members" } } ``` </pre>
+<pre> {
+  sectionTitles: {
+    topics: "Research Areas",
+    lessons: "Key Learnings",
+    collaborators: "Team Members"
+  }
+} </pre>
 
 ### 3. **Add Your Project Image**
    - Put your project image in the `Assets` folder. You can go to the folder assets and click upload new.
