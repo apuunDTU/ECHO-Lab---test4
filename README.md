@@ -27,18 +27,17 @@ Echo Lab Website/
 ```
 
 
-# HOW TO ADD A NEW LAB NOTE.⭐
-
-### ⭐ Adding a New Lab Note (Project) ⭐
+# ⭐HOW TO ADD A NEW LAB NOTE⭐
 
 This is the main way to add content to the website. Follow these simple steps:
 
 1. **Create a New Project File**
    - Go to the `Projects` folder
    - Create a new file named after your project (use simple words with hyphens, like `my-new-project.js`)
-   - Copy and paste this template into your new file:
+   - Copy and paste this text template into your new file:
 
    ```javascript
+   //Project tile
    const noteData = {
      id: 5, // Use the next number after the last project
      title: "YOUR PROJECT TITLE",
@@ -73,15 +72,25 @@ This is the main way to add content to the website. Follow these simple steps:
      }
    };
    ```
+* You can also download one of the current files and edit it in your Text Edit. 
+
+To style the text you can use: 
+For bullet points: Use an array []
+For paragraphs: Use a string with <p> tags
+For single line text: Use a plain string
+
+IMPORTANT: 
+
 
 2. **Add Your Project Image**
-   - Put your project image in the `Assets` folder
+   - Put your project image in the `Assets` folder. You can go to the folder assets and click upload new.
    - Make sure to use the correct image path in your project file
 
 3. **Update the Project List**
    - Open `Projects/project-list.json`
    - Add your project name (without the .js) to the list
    - Example: `"projects": ["existing-project-1", "existing-project-2", "my-new-project"]`
+
 
 ### Adding a New Event (Admin Only)
 
@@ -107,18 +116,4 @@ If you're having trouble:
 3. Verify that your images are in the Assets folder
 4. Contact the website administrator for assistance
 
-## Browser Support
-
-The website works best on modern browsers like:
-- Chrome
-- Firefox
-- Safari
-- Edge
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request 
+That's it. The process should be fairly easy but if you have any problems try asking one of the computer people from the division.
