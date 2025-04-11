@@ -104,15 +104,15 @@ To add a new event to the website:
    ```
 3. Make sure to add it inside the "events" array and separate it with a comma from the previous event
 
-## Need Help?
+## NOT WORKING?
 
 ✅ Final Checklist:
- Create a new project file in the Projects/ folder?
- Use a clear and simple filename (like my-new-project.js)?
- Fill in all the fields in the noteData object (title, date, image, etc.)?
- Upload your image to the Assets/ folder?
- Use the correct path to the image in your project file (Assets/your-image.png)?
- Add your project name (without .js) to the project-list.json file?
+ - Create a new project file in the Projects/ folder?
+ -  Use a clear and simple filename (like my-new-project.js)?
+ -  Fill in all the fields in the noteData object (title, date, image, etc.)?
+ -  Upload your image to the Assets/ folder?
+ -   Use the correct path to the image in your project file (Assets/your-image.png)?
+ -   Add your project name (without .js) to the project-list.json file?
 
 If you cant't find the issue try asking Johan, Sarah or Ainoa. Otherwise any AI software might be useful. 
 
