@@ -1,6 +1,5 @@
 // Data Destruction Workshop project data
 const noteData = {
-  id: 2,
   title: "DATA DESTRUCTION WORKSHOP I LOVE ITTTTTT",
   date: "10.05.2024",
   image: "Assets/Test.png",
