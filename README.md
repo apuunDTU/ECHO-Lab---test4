@@ -47,7 +47,7 @@ This is the main way to add content to the website. Follow these simple steps:
        "Topic 3"
      ],
      objectives: "What you want to achieve with this project",
-     methodology: "How you plan to do it",
+     methodology: "How you plan to do it or how you did it",
      lessons: [
        "What you learned 1",
        "What you learned 2",
@@ -62,6 +62,7 @@ This is the main way to add content to the website. Follow these simple steps:
      projectLinkText: "View Project",
      publicationLink: "https://your-publication-link.com",
      publicationLinkText: "Read Publication",
+   
      sectionTitles: {
        topics: "Research Areas",
        lessons: "Key Learnings",
@@ -76,6 +77,15 @@ REMEMBER: You can also download one of the current files and edit it locally in 
    - For bullet points: Use an array []
    - For paragraphs: Use a string with <p> tags
    - For single line text: Use a plain string
+  
+   If you want to change the titles of the different sections you can use this part: 
+
+sectionTitles: {
+       topics: "Research Areas",
+       lessons: "Key Learnings",
+       collaborators: "Team Members"
+     }
+
 
 3. **Add Your Project Image**
    - Put your project image in the `Assets` folder. You can go to the folder assets and click upload new.
