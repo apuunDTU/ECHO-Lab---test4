@@ -79,16 +79,14 @@ You can control how the text appears in each section:
 
 *For Bullet points: Use an array*
 
-<pre> 
    lessons: [
   "What you learned 1",
   "What you learned 2"
 ]
-<pre>
    
 *For Paragraphs: Use a string with <p> tags*
 
-<pre> objectives: "<p>This is a paragraph of text.</p>" <pre>
+objectives: "<p>This is a paragraph of text.</p>
 
 *For Single-line text: Use a plain string*
    
