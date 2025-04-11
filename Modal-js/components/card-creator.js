@@ -9,7 +9,6 @@ export function createLabNoteCard(noteData) {
 
     const card = document.createElement('div');
     card.className = 'research-card';
-    card.dataset.id = noteData.id;
     card.style.position = 'relative';
     card.style.height = '710px';
     card.style.display = 'flex';
@@ -109,7 +108,7 @@ export function createLabNoteCard(noteData) {
         
         // Only adjust right column text if it overflows and not in mobile view
         if (rightOverflows && window.innerWidth > 768) {
-            const reducedSize = '0.47rem';
+            const reducedSize = '0.4rem';
             rightColumn.querySelectorAll('.topic-content, .topic-content p, .topic-content li, .topic-content div').forEach(element => {
                 element.style.fontSize = reducedSize;
             });
