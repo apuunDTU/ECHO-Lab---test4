@@ -69,27 +69,26 @@ This is the main way to add content to the website. Follow these simple steps:
      }
    };
    ```
-* You can also download one of the current files and edit it locally in your computer with Text Edit and upload it to the folder. Just remember to change the name!
 
-To style the text you can use: 
-For bullet points: Use an array []
-For paragraphs: Use a string with <p> tags
-For single line text: Use a plain string
+REMEMBER: You can also download one of the current files and edit it locally in your computer with Text Edit and upload it to the folder. Just remember to change the name!
 
-IMPORTANT: 
+2. **Style the text in the card** 
+   - For bullet points: Use an array []
+   - For paragraphs: Use a string with <p> tags
+   - For single line text: Use a plain string
 
-
-2. **Add Your Project Image**
+3. **Add Your Project Image**
    - Put your project image in the `Assets` folder. You can go to the folder assets and click upload new.
    - Make sure to use the correct image path in your project file
 
-3. **Update the Project List**
+4. **Update the Project List**
    - Open `Projects/project-list.json`
    - Add your project name (without the .js) to the list
    - Example: `"projects": ["existing-project-1", "existing-project-2", "my-new-project"]`
 
 
-### Adding a New Event (Admin Only)
+
+## Adding a New Event (Admin Only)
 
 To add a new event to the website:
 
