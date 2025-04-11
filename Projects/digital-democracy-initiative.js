@@ -1,6 +1,5 @@
 // Digital Democracy Initiative project data
 const noteData = {
-  id: 3,
   title: "DIGITAL DEMOCRACY INITIATIVE",
   date: "22.03.2024",
   image: "Assets/Test.png",
