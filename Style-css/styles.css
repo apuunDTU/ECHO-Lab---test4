@@ -564,9 +564,14 @@ body {
         height: 250px;
     }
     
-    .card-preview {
+  .card-preview {
         height: auto !important;
         overflow: visible !important;
+        font-size: 0.7rem !important;
+    }
+    
+    .card-preview p {
+        font-size: 1.5rem !important;
     }
     
     .modal {
