@@ -261,10 +261,12 @@ body {
     line-height: 1.1;
     letter-spacing: -0.02em;
     transition: font-size 0.3s ease;
+    text-transform: uppercase !important;
 }
 
 .project-title.long-title {
     font-size: 1.5rem;
+    text-transform: uppercase !important;
 }
 
 .section {
@@ -564,14 +566,14 @@ body {
         height: 250px;
     }
     
-  .card-preview {
+    .card-preview {
         height: auto !important;
         overflow: visible !important;
         font-size: 0.7rem !important;
     }
     
     .card-preview p {
-        font-size: 1.5rem !important;
+        font-size: 0.7rem !important;
     }
     
     .modal {
@@ -591,10 +593,12 @@ body {
     .modal .project-title {
         font-size: 1.8rem;
         margin-bottom: 0.8rem;
+        text-transform: uppercase !important;
     }
     
     .modal .project-title.long-title {
         font-size: 1.5rem;
+        text-transform: uppercase !important;
     }
     
     .modal .section-title {
