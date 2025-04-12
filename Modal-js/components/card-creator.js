@@ -43,7 +43,7 @@ export function createLabNoteCard(noteData) {
     // Left column
     const leftColumn = document.createElement('div');
     leftColumn.className = 'card-left';
-    leftColumn.style.flex = '1.1';
+    leftColumn.style.flex = window.innerWidth <= 768 ? '1' : '1.1';
     leftColumn.style.overflow = 'hidden';
     
     // Add title with word count check
@@ -72,6 +72,11 @@ export function createLabNoteCard(noteData) {
     rightColumn.style.overflow = 'hidden';
     rightColumn.style.maxHeight = '610px';
     
+    // Hide right column on mobile
+    if (window.innerWidth <= 768) {
+        rightColumn.style.display = 'none';
+    }
+    
     // Add sections to right column
     const topicsSection = createSection(noteData.sectionTitles.topics, noteData.researchTopics, 'text', false);
     rightColumn.appendChild(topicsSection);
@@ -92,26 +97,19 @@ export function createLabNoteCard(noteData) {
     content.appendChild(rightColumn);
     card.appendChild(content);
 
-    // Check if content overflows and adjust if needed
+    // Check if content overflows and adjust if needed - only for desktop
     setTimeout(() => {
-        const leftOverflows = leftColumn.scrollHeight > leftColumn.clientHeight;
-        const rightOverflows = rightColumn.scrollHeight > rightColumn.clientHeight;
-        
-        // Only adjust preview text if left column overflows
-        if (leftOverflows) {
-            const reducedSize = '0.45rem';
-            preview.style.fontSize = reducedSize;
-            preview.querySelectorAll('p').forEach(p => {
-                p.style.fontSize = reducedSize;
-            });
-        }
-        
-        // Only adjust right column text if it overflows and not in mobile view
-        if (rightOverflows && window.innerWidth > 768) {
-            const reducedSize = '0.4rem';
-            rightColumn.querySelectorAll('.topic-content, .topic-content p, .topic-content li, .topic-content div').forEach(element => {
-                element.style.fontSize = reducedSize;
-            });
+        if (window.innerWidth > 768) {
+            const leftOverflows = leftColumn.scrollHeight > leftColumn.clientHeight;
+            const rightOverflows = rightColumn.scrollHeight > rightColumn.clientHeight;
+            
+            if (leftOverflows) {
+                preview.classList.add('overflow');
+            }
+            
+            if (rightOverflows) {
+                rightColumn.classList.add('overflow');
+            }
         }
     }, 0);
 
@@ -140,6 +138,31 @@ export function createLabNoteCard(noteData) {
 
     wrapper.appendChild(card);
     wrapper.appendChild(links);
+    
+    // Add resize listener to handle responsive layout
+    window.addEventListener('resize', () => {
+        const isMobile = window.innerWidth <= 768;
+        leftColumn.style.flex = isMobile ? '1' : '1.1';
+        rightColumn.style.display = isMobile ? 'none' : 'block';
+        
+        // Re-check overflow for desktop view
+        if (!isMobile) {
+            const leftOverflows = leftColumn.scrollHeight > leftColumn.clientHeight;
+            const rightOverflows = rightColumn.scrollHeight > rightColumn.clientHeight;
+            
+            if (leftOverflows) {
+                preview.classList.add('overflow');
+            } else {
+                preview.classList.remove('overflow');
+            }
+            
+            if (rightOverflows) {
+                rightColumn.classList.add('overflow');
+            } else {
+                rightColumn.classList.remove('overflow');
+            }
+        }
+    });
     
     // Add click event to open modal
     card.addEventListener('click', (e) => {
@@ -208,7 +231,6 @@ function createSection(title, content, format = 'text', isLast = false) {
 
     const contentElement = document.createElement('div');
     contentElement.className = 'topic-content';
-    contentElement.style.fontSize = '0.45rem';
 
     if (format === 'list' && Array.isArray(content)) {
         const list = document.createElement('ul');
@@ -224,26 +246,12 @@ function createSection(title, content, format = 'text', isLast = false) {
         content.forEach(item => {
             const div = document.createElement('div');
             div.innerHTML = item;
-            // Force consistent font size on all text elements
-            div.style.fontSize = '0.45rem';
-            div.querySelectorAll('*').forEach(el => {
-                if (el.style) {
-                    el.style.fontSize = '0.45rem';
-                }
-            });
             contentElement.appendChild(div);
         });
     } else {
         // Handle single HTML content
         const div = document.createElement('div');
         div.innerHTML = content;
-        // Force consistent font size on all text elements
-        div.style.fontSize = '0.45rem';
-        div.querySelectorAll('*').forEach(el => {
-            if (el.style) {
-                el.style.fontSize = '0.45rem';
-            }
-        });
         contentElement.appendChild(div);
     }
 
