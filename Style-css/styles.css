@@ -254,7 +254,7 @@ body {
 
 .project-title {
     font-family: 'Neo Sans Std', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 700;
     color: rgba(3, 15, 79, 0.9);
     margin-bottom: 0.5rem;
@@ -265,7 +265,7 @@ body {
 }
 
 .project-title.long-title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-transform: uppercase !important;
 }
 
