@@ -2,7 +2,7 @@
 const noteData = {
   title: "DATA DESTRUCTION WORKSHOP I LOVE ITTTTTT",
   date: "10.05.2024",
-  image: "Assets/map31.jpeg",
+  image: "Assets/map31.jpg",
   preview: "A workshop exploring the ethical and practical implications of data destruction in the digital age. Participants will learn about different methods of secure data deletion and discuss the importance of data privacy in research contexts.",
   researchTopics: [
     "Data privacy",
