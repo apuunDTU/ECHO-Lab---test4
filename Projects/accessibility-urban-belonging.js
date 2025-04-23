@@ -2,7 +2,7 @@
 const noteData = {
   title: "Web Accessibility Assessment of The Urban Belonging Photo App",
   date: "01.11.2024",
-  image: "Assets/map31.jpeg",
+  image: "Assets/map31.png",
   preview: `
     <p>The workshop was part of the project covering Accessibility Assessment and further development of the Urban Belonging Photo App. The open source toolkit has been developed by a group of researchers and architects for the Urban Belonging project. It was used for the research project between 2020 and 2023, and upon successful completion of the project it was decided to develop the app further.</p>
     <p>Since then the app has been maintained by developer Iain Kettles and has been used for various participatory projects. At ECHO Lab, the app was taken through a Web Accessibility Assessment by two digital accessibility consultants, who shared their methods, insights, and general remarks on inclusive digital participatory methods in a one-day workshop.</p>
