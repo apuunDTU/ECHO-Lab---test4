@@ -25,7 +25,7 @@ Echo Lab Website/
 ```
 
 
-# HOW TO ADD A NEW LAB NOTE⭐
+# How to add a lab note⭐
 
 This is the main way to add content to the website. Follow these simple steps:
 
