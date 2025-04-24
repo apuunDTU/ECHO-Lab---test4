@@ -10,7 +10,7 @@ Echo Lab Website/
 ├── Assets/                  # Static assets (images, logos)
 ├── Events/                  # Events data (managed by admin)
 │   └── events.json         # List of upcoming events
-├── Projects/               # ⭐ NEW CONTENT GOES HERE ⭐
+├── Projects/               # LAB NOTES - NEW CONTENT GOES HERE ⭐
 │   ├── project-list.json   # List of all projects
 │   └── *.js               # Individual project files
 ├── Modal-js/               # JavaScript modules (managed by admin)
@@ -25,7 +25,7 @@ Echo Lab Website/
 ```
 
 
-# ⭐HOW TO ADD A NEW LAB NOTE⭐
+# HOW TO ADD A NEW LAB NOTE⭐
 
 This is the main way to add content to the website. Follow these simple steps:
 
