@@ -1,6 +1,5 @@
 // Project tile
 const noteData = {
-
   title: "Just playing here",
   date: "18.12.1998", // Use this date format
   image: "Assets/your-image.png", // Put your image in the Assets folder
