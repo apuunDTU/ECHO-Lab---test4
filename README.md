@@ -90,7 +90,7 @@ title: "My Project Title"
 } 
  ```
 
-### 4. **Add links to the lab note**: You can add links to the lab notes and change the text of the link button.
+### 3. **Add links to the lab note**: You can add links to the lab notes and change the text of the link button.
 
 ```javascript
 // Add your links
@@ -101,7 +101,7 @@ title: "My Project Title"
 ```
 
 
-### 5. **Update the Project List**
+### 4. **Update the Project List**
    - Open `Projects/project-list.json`
    - Add your project name (without the .js) to the list
    - Example: `"projects": ["existing-project-1", "existing-project-2", "my-new-project"]`
