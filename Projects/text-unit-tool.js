@@ -1,4 +1,4 @@
-// AI as Citizens project data
+// Text-unit-tool
 const noteData = {
   title: "HELLO I AM JUST CHECKING WHAT HAPPENS",
   date: "14.06.2024",
