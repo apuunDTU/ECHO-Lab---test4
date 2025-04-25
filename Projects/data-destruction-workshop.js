@@ -25,10 +25,11 @@ const noteData = {
     "Privacy International",
     "Privacy International"
   ],
-  projectLink: "https://www.linkedin.com/feed/",
-  projectLinkText: "Workshop Details",
-  publicationLink: "https://www.linkedin.com/feed/",
-  publicationLinkText: "View Report",
+  Link1: "https://www.linkedin.com/feed/",
+  LinkText1: "Workshop Details",
+  Link2: "https://www.linkedin.com/feed/",
+  LinkText2: "View Report",
+  
   sectionTitles: {
     topics: "Key Findings",
     lessons: "Insights Gained",
