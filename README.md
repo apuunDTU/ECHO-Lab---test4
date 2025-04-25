@@ -160,4 +160,4 @@ To add a new event to the website:
 If you have any problems try asking Johan, Sarah or Ainoa. 
 
 That's it!
-Your LAB note should now be live on the Echo Lab website :)
+Your LAB note should now be on the Echo Lab website :)
