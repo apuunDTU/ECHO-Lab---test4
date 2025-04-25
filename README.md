@@ -53,7 +53,7 @@ This is ECHO Lab's digital archive. Each project is featured as a LAB note and i
    - Make sure to use the correct image path in your project file
 
 ### Update the Project List
-Remember to update the "project-list.json" file (also located in the Projects folder) with your new project.
+Remember to also update the "project-list.json" file (also located in the Projects folder) with your new project, for example "my-new-project.js".
 
 ### 2. Optional: Editing Style the Text of the Section Headings
 
