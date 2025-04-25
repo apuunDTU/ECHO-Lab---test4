@@ -2,6 +2,8 @@
 
 This is ECHO Lab's digital archive. Each project is featured as a LAB note and includes a picture and a brief description of the project. Notes are meant to be short and concise, you can include links to documents or publications that are relevant to it.
 
+---
+
 # How to add a lab note? 📝
 
 ## 1. Create a New Project File
@@ -50,11 +52,11 @@ This is ECHO Lab's digital archive. Each project is featured as a LAB note and i
    };
    ```
 
-### **Add Your Project Image**
+## **Add Your Project Image**
    - Put your project image in the `Assets` folder. You can go to the folder assets and click upload new.
    - Make sure to use the correct image path in your project file
 
-### **Add links to the lab note**: You can add links to the lab notes and change the text of the link button.
+## **Add links to the lab note**: You can add links to the lab notes and change the text of the link button.
 
 ```javascript
 // Add your links
@@ -64,24 +66,15 @@ This is ECHO Lab's digital archive. Each project is featured as a LAB note and i
       LinkText2: "Read Publication",
 ```
 
-### **Save your project by clicking the green button - Commit changes**
+## **Save your project by clicking the green button - Commit changes**
    -Your project file should now appear under the project folder.
 
-### **Update the Project List**
+## **Update the Project List**
    - Open `Projects/project-list.json`
    - Add your project name (without the .js) to the list
    - Example: `"projects": ["existing-project-1", "existing-project-2", "my-new-project"]`
    - The order of the list will determine how the lab notes apear in the main website.
-
-
-### That's it! ✅ 
-Your LAB note should now be on the Echo Lab website :) 
-
-### PLEASE NOTE: It might take 5 minutes for GitHub to process your edit. 
-Do not be confused if it takes a bit of time until your lab note appears on the website.
-
----
-
+     
 ### **Optional: Editing Style the Text of the Section Headings**
 
 This is not essential for your project to appear, but you might want different section headings (e.g. methodology, collaborators, etc.)
@@ -121,7 +114,25 @@ title: "My Project Title"
  ```
 
 
-## 2. Adding a New Event (Admin Only)
+## ✅ Final Checklist for uploading projects:
+
+ - Create a new project file in the Projects/ folder?
+ - Use a clear and simple filename (like my-new-project.js)?
+ - Fill in all the fields in the noteData object (title, date, image, etc.)?
+ - Upload your image to the Assets/ folder?
+ - Use the correct path to the image in your project file (Assets/your-image.png)?
+ - Add your project name (without .js) to the project-list.json file?
+
+If you have any problems try asking Johan, Sarah or Ainoa. 
+Your LAB note should now be on the Echo Lab website :) 
+
+### PLEASE NOTE: It might take 5 minutes for GitHub to process your edit. 
+Do not be confused if it takes a bit of time until your lab note appears on the website.
+
+
+---
+
+# 2. Adding a New Event (Admin Only)
 
 To add a new event to the website:
 
@@ -137,20 +148,10 @@ To add a new event to the website:
 
    ```
 
-## ✅ Final Checklist for uploading projects:
+---
 
- - Create a new project file in the Projects/ folder?
- - Use a clear and simple filename (like my-new-project.js)?
- - Fill in all the fields in the noteData object (title, date, image, etc.)?
- - Upload your image to the Assets/ folder?
- - Use the correct path to the image in your project file (Assets/your-image.png)?
- - Add your project name (without .js) to the project-list.json file?
+# Website Structure - here you can see how the github folders have been organised.
 
-If you have any problems try asking Johan, Sarah or Ainoa. 
-
-
-
-## Website Structure - here you can see how the github folders have been organised.
 ```
 Echo Lab Website/
 ├── Assets/                  # Static assets (images, logos)
