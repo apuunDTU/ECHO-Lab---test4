@@ -1,6 +1,6 @@
 # Echo Lab Website
 
-This is the digital archive showcase all projects done at ECHO Lab. Each project is featured as a LAB note and includes a picture and a brief description of the project. Notes are meant to be short and concise, you can include links to documents or publications that are relevant to it.
+This is ECHO Lab's digital archive. Each project is featured as a LAB note and includes a picture and a brief description of the project. Notes are meant to be short and concise, you can include links to documents or publications that are relevant to it.
 
 
 # What is the website structure, and which folders should you upload the content to?
