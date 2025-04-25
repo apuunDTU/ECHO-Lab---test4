@@ -71,7 +71,6 @@ Echo Lab Website/
    };
    ```
 
-REMEMBER: You can also download one of the current files and edit it locally in your computer with Text Edit and upload it to the folder. Just remember to change the name!
 
 ### 2. Style the Text in the Card
 
