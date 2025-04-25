@@ -24,9 +24,9 @@ const noteData = {
     "Danish Technical Museum"
   ],
   projectLink: "https://www.linkedin.com/feed/",
-  projectLinkText: "Framework Documentation",
-  publicationLink: "https://www.linkedin.com/feed/",
-  publicationLinkText: "Download Guidelines",
+  projectLinkText: "Website",
+ // publicationLink: "https://www.linkedin.com/feed/",
+ // publicationLinkText: "Download Guidelines",
   sectionTitles: {
     topics: "Research Areas",
     lessons: "Key Learnings",
