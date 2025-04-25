@@ -95,9 +95,7 @@ objectives: "<p>This is a paragraph of text.</p>" "<p>This is another piece of t
 title: "My Project Title"
  ```
 
-*Optional: Change Section Titles*
-
-If you'd like to customize the section headings on your card, you can edit this part:
+*Optional: Change Section Titles*: If you'd like to customize the section headings on your card, you can edit this part of the code:
 
    ```javascript
   sectionTitles: {
