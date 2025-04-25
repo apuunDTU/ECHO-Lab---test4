@@ -1,12 +1,11 @@
 {
   "projects": [
-    "grounding-AI",
     "accessibility-urban-belonging",
+    "grounding-AI",
     "ai-as-citizens",
     "data-destruction-workshop",
     "digital-democracy-initiative",
     "ethical-ai-framework", 
-    "test",
     "Sarah-test-file"
 
   ]
