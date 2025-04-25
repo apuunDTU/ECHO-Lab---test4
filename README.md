@@ -26,7 +26,7 @@ Echo Lab Website/
 
 # How to add a lab note? 📝
 
-### 1. Create a New Project File
+## 1. Create a New Project File
    - Go to the `Projects` folder
    - Create a new file named after your project (use simple words with hyphens, like `my-new-project.js`)
    - Copy and paste this text template into your new file:
@@ -72,7 +72,9 @@ Echo Lab Website/
    ```
 
 
-### 2. Style the Text in the Card
+### 2. Optional: Editing Style the Text of the Section Headings
+
+This is not essential for your project to appear, but you might want different section headings (e.g. methodology, collaborators, etc.)
 
 You can control how the text appears in each section:
 
