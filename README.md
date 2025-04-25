@@ -73,7 +73,15 @@ This is ECHO Lab's digital archive. Each project is featured as a LAB note and i
    - Example: `"projects": ["existing-project-1", "existing-project-2", "my-new-project"]`
    - The order of the list will determine how the lab notes apear in the main website.
 
-### 2. Optional: Editing Style the Text of the Section Headings
+
+### That's it! ✅ 
+Your LAB note should now be on the Echo Lab website :) 
+
+### PLEASE NOTE: It might take 5 minutes for GitHub to process your edit. 
+Do not be confused if it takes a bit of time until your lab note appears on the website.
+
+
+### **Optional: Editing Style the Text of the Section Headings**
 
 This is not essential for your project to appear, but you might want different section headings (e.g. methodology, collaborators, etc.)
 
@@ -112,7 +120,7 @@ title: "My Project Title"
  ```
 
 
-## Adding a New Event (Admin Only)
+## 2. Adding a New Event (Admin Only)
 
 To add a new event to the website:
 
@@ -138,12 +146,6 @@ To add a new event to the website:
  - Add your project name (without .js) to the project-list.json file?
 
 If you have any problems try asking Johan, Sarah or Ainoa. 
-
-That's it!
-Your LAB note should now be on the Echo Lab website :) 
-
-### PLEASE NOTE: It might take 5 minutes for GitHub to process your edit. 
-Do not be confused if it takes a bit of time until your lab note appears on the website.
 
 
 
