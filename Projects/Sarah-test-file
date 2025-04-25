@@ -1,4 +1,4 @@
-//Project tile
+// Project tile
 const noteData = {
 
   title: "Just playing here",
