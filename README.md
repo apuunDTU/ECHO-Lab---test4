@@ -52,6 +52,9 @@ This is ECHO Lab's digital archive. Each project is featured as a LAB note and i
    - Put your project image in the `Assets` folder. You can go to the folder assets and click upload new.
    - Make sure to use the correct image path in your project file
 
+### Update the Project List
+Remember to update the "project-list.json" file (also located in the Projects folder) with your new project.
+
 ### 2. Optional: Editing Style the Text of the Section Headings
 
 This is not essential for your project to appear, but you might want different section headings (e.g. methodology, collaborators, etc.)
