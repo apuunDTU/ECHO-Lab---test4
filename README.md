@@ -65,9 +65,9 @@ This is ECHO Lab's digital archive. Each project is featured as a LAB note and i
 ```
 
 ### **Save your project by clicking the green button - Commit changes**
-Your project file should now appear under the project folder.
+   -Your project file should now appear under the project folder.
 
-### 4. **Update the Project List**
+### **Update the Project List**
    - Open `Projects/project-list.json`
    - Add your project name (without the .js) to the list
    - Example: `"projects": ["existing-project-1", "existing-project-2", "my-new-project"]`
