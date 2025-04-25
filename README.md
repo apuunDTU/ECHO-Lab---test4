@@ -6,8 +6,9 @@ This is ECHO Lab's digital archive. Each project is featured as a LAB note and i
 
 ## 1. Create a New Project File
    - Go to the `Projects` folder
-   - Create a new file named after your project (use simple words with hyphens, like `my-new-project.js`)
-   - Copy and paste this text template into your new file:
+   - Create a new file clicking add file on the top Right corner and named after your project. Use simple words with hyphens, like `my-new-project.js`)
+   - Remember to use the ending (.js) to your project file
+   - Copy and paste this text template into your new file and edit the text:
 
    ```javascript
    //Project tile
@@ -48,12 +49,29 @@ This is ECHO Lab's digital archive. Each project is featured as a LAB note and i
      }
    };
    ```
+
 ### **Add Your Project Image**
    - Put your project image in the `Assets` folder. You can go to the folder assets and click upload new.
    - Make sure to use the correct image path in your project file
 
-### Update the Project List
-Remember to also update the "project-list.json" file (also located in the Projects folder) with your new project, for example "my-new-project.js".
+### 3. **Add links to the lab note**: You can add links to the lab notes and change the text of the link button.
+
+```javascript
+// Add your links
+      Link1: "https://your-project-link.com",
+      LinkText1: "View Project",
+      Link2: "https://your-publication-link.com",
+      LinkText2: "Read Publication",
+```
+
+### **Save your project by clicking the green button - Commit changes**
+Your project file should now appear under the project folder.
+
+### 4. **Update the Project List**
+   - Open `Projects/project-list.json`
+   - Add your project name (without the .js) to the list
+   - Example: `"projects": ["existing-project-1", "existing-project-2", "my-new-project"]`
+   - The order of the list will determine how the lab notes apear in the main website.
 
 ### 2. Optional: Editing Style the Text of the Section Headings
 
@@ -93,24 +111,6 @@ title: "My Project Title"
 } 
  ```
 
-### 3. **Add links to the lab note**: You can add links to the lab notes and change the text of the link button.
-
-```javascript
-// Add your links
-      Link1: "https://your-project-link.com",
-      LinkText1: "View Project",
-      Link2: "https://your-publication-link.com",
-      LinkText2: "Read Publication",
-```
-
-
-### 4. **Update the Project List**
-   - Open `Projects/project-list.json`
-   - Add your project name (without the .js) to the list
-   - Example: `"projects": ["existing-project-1", "existing-project-2", "my-new-project"]`
-   - The order of the list will determine how the lab notes apear in the main website.
-
-
 
 ## Adding a New Event (Admin Only)
 
@@ -147,10 +147,7 @@ Do not be confused if it takes a bit of time until your lab note appears on the 
 
 
 
-
-## Website Structure 
-
-### What is the website structure, and which folders should you upload the content to?
+## Website Structure - here you can see how the github folders have been organised.
 ```
 Echo Lab Website/
 ├── Assets/                  # Static assets (images, logos)
