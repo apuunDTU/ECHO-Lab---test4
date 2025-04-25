@@ -52,11 +52,11 @@ This is ECHO Lab's digital archive. Each project is featured as a LAB note and i
    };
    ```
 
-## **Add Your Project Image**
+## **2. Add Your Project Image**
    - Put your project image in the `Assets` folder. You can go to the folder assets and click upload new.
    - Make sure to use the correct image path in your project file
 
-## **Add links to the lab note**: You can add links to the lab notes and change the text of the link button.
+## **3. Add links to the lab note**: You can add links to the lab notes and change the text of the link button.
 
 ```javascript
 // Add your links
@@ -66,10 +66,10 @@ This is ECHO Lab's digital archive. Each project is featured as a LAB note and i
       LinkText2: "Read Publication",
 ```
 
-## **Save your project by clicking the green button - Commit changes**
+## **4. Save your project by clicking the green button - Commit changes**
    -Your project file should now appear under the project folder.
 
-## **Update the Project List**
+## **5. Update the Project List**
    - Open `Projects/project-list.json`
    - Add your project name (without the .js) to the list
    - Example: `"projects": ["existing-project-1", "existing-project-2", "my-new-project"]`
@@ -132,7 +132,7 @@ Do not be confused if it takes a bit of time until your lab note appears on the 
 
 ---
 
-# 2. Adding a New Event (Admin Only)
+# Adding a New Event (Admin Only)
 
 To add a new event to the website:
 
