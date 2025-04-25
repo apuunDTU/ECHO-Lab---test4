@@ -60,7 +60,8 @@ This is ECHO Lab's digital archive. Each project is featured as a LAB note and i
      image: "Assets/Test.png", // Put your image in the Assets folder and copy the name here
 ```
 
-## **3. Add links to the lab note**: You can add links to the lab notes and change the text of the link button.
+## **3. Add links to the lab note**:
+   - You can add links to the lab notes and change the text of the link button.
 
 ```javascript
 // Add your links
