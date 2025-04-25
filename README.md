@@ -118,7 +118,7 @@ title: "My Project Title"
 ```javascript
 // Add your links
       Link1: "https://your-project-link.com",
-      LinkText1: "View Project"
+      LinkText1: "View Project",
       Link2: "https://your-publication-link.com",
       LinkText2: "Read Publication",
 ```
