@@ -54,7 +54,11 @@ This is ECHO Lab's digital archive. Each project is featured as a LAB note and i
 
 ## **2. Add Your Project Image**
    - Put your project image in the `Assets` folder. You can go to the folder assets and click upload new.
-   - Make sure to use the correct image path in your project file
+   - Make sure to use the correct image path in your project file:
+     
+```javascript
+     image: "Assets/Test.png", // Put your image in the Assets folder and copy the name here
+```
 
 ## **3. Add links to the lab note**: You can add links to the lab notes and change the text of the link button.
 
