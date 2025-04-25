@@ -26,8 +26,6 @@ Echo Lab Website/
 
 # How to add a lab note? 📝
 
-This is the main way to add content to the website. Follow these simple steps:
-
 ### 1. Create a New Project File
    - Go to the `Projects` folder
    - Create a new file named after your project (use simple words with hyphens, like `my-new-project.js`)
