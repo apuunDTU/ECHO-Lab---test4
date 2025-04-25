@@ -1,29 +1,5 @@
 # Echo Lab Website
 
-This is ECHO Lab's digital archive. Each project is featured as a LAB note and includes a picture and a brief description of the project. Notes are meant to be short and concise, you can include links to documents or publications that are relevant to it.
-
-
-# What is the website structure, and which folders should you upload the content to?
-```
-Echo Lab Website/
-├── Assets/                  # Static assets (images, logos)
-├── Events/                  # Events data (managed by admin)
-│   └── events.json          # List of upcoming events
-├── Projects/                # LAB NOTES - NEW CONTENT GOES HERE 🗂📝
-│   ├── project-list.json    # List of all projects - needs to be updated
-│   └── *.js                 # Individual project files - Using template you can create a new project 
-├── Modal-js/                # JavaScript modules (managed by admin)
-│   ├── components/          # UI components
-│   │   ├── card-creator.js  # creates the UI of the lab note
-│   │   ├── events-handler.js 
-│   │   └── modal.js
-│   └── loader.js            # Loads the lab notes into the main HTML
-├── Style-css/               # CSS styles of the website (managed by admin)
-│   └── styles.css 
-└── index.html               # Main HTML file (managed by admin)
-```
-
-
 # How to add a lab note? 📝
 
 ## 1. Create a New Project File
@@ -165,3 +141,31 @@ Your LAB note should now be on the Echo Lab website :)
 
 ### PLEASE NOTE: It might take 5 minutes for GitHub to process your edit. 
 Do not be confused if it takes a bit of time until your lab note appears on the website.
+
+
+
+
+## Website Structure 
+
+This is ECHO Lab's digital archive. Each project is featured as a LAB note and includes a picture and a brief description of the project. Notes are meant to be short and concise, you can include links to documents or publications that are relevant to it.
+
+
+### What is the website structure, and which folders should you upload the content to?
+```
+Echo Lab Website/
+├── Assets/                  # Static assets (images, logos)
+├── Events/                  # Events data (managed by admin)
+│   └── events.json          # List of upcoming events
+├── Projects/                # LAB NOTES - NEW CONTENT GOES HERE 🗂📝
+│   ├── project-list.json    # List of all projects - needs to be updated
+│   └── *.js                 # Individual project files - Using template you can create a new project 
+├── Modal-js/                # JavaScript modules (managed by admin)
+│   ├── components/          # UI components
+│   │   ├── card-creator.js  # creates the UI of the lab note
+│   │   ├── events-handler.js 
+│   │   └── modal.js
+│   └── loader.js            # Loads the lab notes into the main HTML
+├── Style-css/               # CSS styles of the website (managed by admin)
+│   └── styles.css 
+└── index.html               # Main HTML file (managed by admin)
+```
