@@ -62,7 +62,7 @@ Echo Lab Website/
    publicationLink: "https://www.linkedin.com/feed/", // Source link 2
    publicationLinkText: "Download Guidelines", // Button text 2
 
-// Change section titles (right column)
+// OPTIONAL: Change section titles (right column)
      sectionTitles: {
        topics: "Research Areas",
        lessons: "Key Learnings",
