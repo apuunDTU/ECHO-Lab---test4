@@ -48,7 +48,9 @@ This is ECHO Lab's digital archive. Each project is featured as a LAB note and i
      }
    };
    ```
-
+### **Add Your Project Image**
+   - Put your project image in the `Assets` folder. You can go to the folder assets and click upload new.
+   - Make sure to use the correct image path in your project file
 
 ### 2. Optional: Editing Style the Text of the Section Headings
 
@@ -87,10 +89,6 @@ title: "My Project Title"
   }
 } 
  ```
-
-### 3. **Add Your Project Image**
-   - Put your project image in the `Assets` folder. You can go to the folder assets and click upload new.
-   - Make sure to use the correct image path in your project file
 
 ### 4. **Add links to the lab note**: You can add links to the lab notes and change the text of the link button.
 
