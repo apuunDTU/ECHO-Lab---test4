@@ -57,10 +57,10 @@ Echo Lab Website/
      ],
 
 // Add your links
-      Link1: "https://your-project-link.com",
-      LinkText1: "View Project",
-      Link2: "https://your-publication-link.com",
-      LinkText2: "Read Publication",
+   projectLink: "https://www.linkedin.com/feed/", // Source link 1
+   projectLinkText: "Framework Documentation", // Button text 1
+   publicationLink: "https://www.linkedin.com/feed/", // Source link 2
+   publicationLinkText: "Download Guidelines", // Button text 2
 
 // Change section titles (right column)
      sectionTitles: {
