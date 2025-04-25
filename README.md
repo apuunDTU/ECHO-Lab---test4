@@ -3,29 +3,29 @@
 This is the ofical website to showcase all projects done at ECHO Lab. Each project is featured as a LAB note and includes a picture and a brief description of the project. Notes are meant to be short and concise, you can include links to documents or publications that are relevant to it.
 
 
-# Web Structure
+# What is the website structure and which folders do you upload the content?
 
 ```
 Echo Lab Website/
 ├── Assets/                  # Static assets (images, logos)
 ├── Events/                  # Events data (managed by admin)
-│   └── events.json         # List of upcoming events
-├── Projects/               # LAB NOTES - NEW CONTENT GOES HERE ⭐
-│   ├── project-list.json   # List of all projects
-│   └── *.js               # Individual project files
-├── Modal-js/               # JavaScript modules (managed by admin)
-│   ├── components/         # Reusable UI components
-│   │   ├── card-creator.js
-│   │   ├── events-handler.js
+│   └── events.json          # List of upcoming events
+├── Projects/                # LAB NOTES - NEW CONTENT GOES HERE 🗂📝
+│   ├── project-list.json    # List of all projects - needs to be updated
+│   └── *.js                 # Individual project files - Using template you can create a new project 
+├── Modal-js/                # JavaScript modules (managed by admin)
+│   ├── components/          # UI components
+│   │   ├── card-creator.js  # creates the UI of the lab note
+│   │   ├── events-handler.js 
 │   │   └── modal.js
-│   └── loader.js          # Main application logic
-├── Style-css/             # CSS styles (managed by admin)
-│   └── styles.css
-└── index.html             # Main HTML file (managed by admin)
+│   └── loader.js            # Loads the lab notes into the main HTML
+├── Style-css/               # CSS styles of the website (managed by admin)
+│   └── styles.css 
+└── index.html               # Main HTML file (managed by admin)
 ```
 
 
-# How to add a lab note⭐
+# How to add a lab note? 📝
 
 This is the main way to add content to the website. Follow these simple steps:
 
@@ -119,6 +119,7 @@ If you'd like to customize the section headings on your card, you can edit this 
    - Open `Projects/project-list.json`
    - Add your project name (without the .js) to the list
    - Example: `"projects": ["existing-project-1", "existing-project-2", "my-new-project"]`
+   - The order of the list will determine how the lab notes apear in the main website.
 
 
 
@@ -127,7 +128,7 @@ If you'd like to customize the section headings on your card, you can edit this 
 To add a new event to the website:
 
 1. Open `Events/events.json`
-2. Add your event information following this simple format:
+2. Add your event information following this simple format and upload a picture in the image folder and paste the name where it says "image":
    ```json
    {
      "id": 3,
@@ -137,16 +138,15 @@ To add a new event to the website:
    }
 
    ```
-3. Make sure to add it inside the "events" array and separate it with a comma from the previous event
 
 ## ✅ Final Checklist for uploading projects:
 
  - Create a new project file in the Projects/ folder?
- -  Use a clear and simple filename (like my-new-project.js)?
- -  Fill in all the fields in the noteData object (title, date, image, etc.)?
- -  Upload your image to the Assets/ folder?
- -   Use the correct path to the image in your project file (Assets/your-image.png)?
- -   Add your project name (without .js) to the project-list.json file?
+ - Use a clear and simple filename (like my-new-project.js)?
+ - Fill in all the fields in the noteData object (title, date, image, etc.)?
+ - Upload your image to the Assets/ folder?
+ - Use the correct path to the image in your project file (Assets/your-image.png)?
+ - Add your project name (without .js) to the project-list.json file?
 
 If you have any problems try asking Johan, Sarah or Ainoa. 
 
