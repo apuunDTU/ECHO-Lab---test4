@@ -80,6 +80,7 @@ Your LAB note should now be on the Echo Lab website :)
 ### PLEASE NOTE: It might take 5 minutes for GitHub to process your edit. 
 Do not be confused if it takes a bit of time until your lab note appears on the website.
 
+---
 
 ### **Optional: Editing Style the Text of the Section Headings**
 
