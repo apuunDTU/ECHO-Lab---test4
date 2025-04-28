@@ -21,7 +21,7 @@ const noteData = {
   collaborators: [
     "Matilde Ficozzi and Mathieu Jacomy - AAU, TANTLab",
     "Dario Rodigherio - Groningen University",
-    "Person 3"
+    "[[Danish Technical Museum](https://tekniskmuseum.dk/)]"
   ],
 
 // Add your links
