@@ -48,7 +48,7 @@ export function createLabNoteCard(noteData) {
 
   // Add logo *unconditionally* here.  CSS will control visibility.
     const logo = document.createElement('img');
-    logo.src = 'Assets/o.svg'; // Your logo path
+    logo.src = "Assets/o.svg"; // Your logo path
     logo.alt = 'Lab Logo';
     logo.classList.add('card-logo');
     leftColumn.appendChild(logo);
