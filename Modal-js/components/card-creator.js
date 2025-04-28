@@ -74,6 +74,37 @@ export function createLabNoteCard(noteData) {
     preview.className = 'card-preview';
     preview.appendChild(parseContentWithLinks(noteData.preview));
     leftColumn.appendChild(preview);
+    const linkRegex = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
+
+    let lastIndex = 0;
+    let match;
+
+    while ((match = linkRegex.exec(text)) !== null) {
+        const [fullMatch, linkText, linkUrl] = match;
+
+        // Text before the link
+        if (match.index > lastIndex) {
+            container.appendChild(document.createTextNode(text.substring(lastIndex, match.index)));
+        }
+
+        // Create the link element
+        const a = document.createElement('a');
+        a.href = linkUrl;
+        a.textContent = linkText;
+        a.target = '_blank'; // Open in new tab
+        a.rel = 'noopener noreferrer'; // Safer
+
+        container.appendChild(a);
+
+        lastIndex = match.index + fullMatch.length;
+    }
+
+    // Remaining text after last link
+    if (lastIndex < text.length) {
+        container.appendChild(document.createTextNode(text.substring(lastIndex)));
+    }
+
+    return container;
     
     // Right column
     const rightColumn = document.createElement('div');
