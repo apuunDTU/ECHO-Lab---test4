@@ -62,7 +62,7 @@ export function createLabNoteCard(noteData) {
     // Add preview text
     const preview = document.createElement('div');
     preview.className = 'card-preview';
-    preview.innerHTML = noteData.preview;
+    preview.appendChild(parseContentWithLinks(noteData.preview));
     leftColumn.appendChild(preview);
     
     // Right column
