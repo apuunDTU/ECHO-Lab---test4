@@ -1,8 +1,8 @@
 //Project tile
 const noteData = {
-  title: "WHAT THE HELLLLLLLLL",
-  date: "DD.MM.YYYY", // Use this date format
-  image: "Assets/Test.png", // Put your image in the Assets folder
+  title: "GROUNDING AI",
+  date: "11.04.2025", // Use this date format
+  image: "Assets/clusters-map.png", // Put your image in the Assets folder
   preview: "I don't know what is going on...",
   researchTopics: [
     "Topic 1",
