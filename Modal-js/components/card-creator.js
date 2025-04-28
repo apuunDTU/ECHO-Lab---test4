@@ -46,6 +46,13 @@ export function createLabNoteCard(noteData) {
     leftColumn.style.flex = window.innerWidth <= 768 ? '1' : '1.1';
     leftColumn.style.overflow = 'hidden';
 
+    // Add the small logo - hidden by default, visible only in modal
+    const smallLogo = document.createElement('img');
+    smallLogo.src = '/Assets/o.svg';
+    smallLogo.alt = 'Small Logo';
+    smallLogo.className = 'card-small-logo';
+    card.appendChild(smallLogo);
+
     // Add title with word count check
     const title = document.createElement('h2');
     title.className = 'project-title';
