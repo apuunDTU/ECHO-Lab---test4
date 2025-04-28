@@ -3,7 +3,7 @@ const noteData = {
   title: "Just playing here",
   date: "18.12.1998", // Use this date format
   image: "Assets/Test.png", // Put your image in the Assets folder
-  preview: "welcome to a redundant project card",
+  preview: "welcome to a redundant project card. I am here to test if things work, most of all [link](https://erdetfredag.dk)",
   researchTopics: [
     "I have nothing to say jere",
     "Just checking for spacing",
