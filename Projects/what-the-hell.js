@@ -11,29 +11,30 @@ const noteData = {
     "LLMs for social research",
     "Data visualisation"
   ],
-  objectives: "What you want to achieve with this project",
-  methodology: "How you plan to do it or how you did it",
+  objectives: "Experiment with methodologies for engaging the public with large scientific literature corpora.",
+  methodology: "Exhibition building, LLM’s for public Engagement, Data Visualisation Digital Methods",
   lessons: [
-    "What you learned 1",
-    "What you learned 2",
-    "What you learned 3"
+    "Ethical considerations must be integrated throughout the AI development lifecycle",
+    "Diverse perspectives are essential for identifying potential harms",
+    "Danish Technical Museum"
   ],
   collaborators: [
-    "Person 1",
-    "Person 2",
+    "Matilde Ficozzi and Mathieu Jacomy - AAU, TANTLab",
+    "Dario Rodigherio - Groningen University",
     "Person 3"
   ],
 
 // Add your links
-projectLink: "https://www.linkedin.com/feed/", // Source link 1
-projectLinkText: "Framework Documentation", // Button text 1
-publicationLink: "https://www.linkedin.com/feed/", // Source link 2
-publicationLinkText: "Download Guidelines", // Button text 2
+projectLink: "https://grounding-ai.github.io/web-application/#/map", // Source link 1
+projectLinkText: "Website", // Button text 1
+//publicationLink: "https://www.linkedin.com/feed/", // Source link 2
+//publicationLinkText: "Download Guidelines", // Button text 2
 
 // OPTIONAL: Change section titles (right column)
   sectionTitles: {
     topics: "Research Areas",
     lessons: "Key Learnings",
+    objectives: "goals",
     collaborators: "Team Members"
   }
 };
