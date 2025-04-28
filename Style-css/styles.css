@@ -245,23 +245,6 @@ body {
     overflow: hidden;
 }
 
-/* CARD LOGO */
-/* Initially hide the logo */
-.card-logo {
-  display: none;
-}
-
-/* Show the logo when it's inside an active modal */
-.modal.active .card-logo {
-  width: 50px;
-  height: auto;
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  z-index: 2;
-  display: block;
-}
-
 .card-right {
     flex: 1;
     overflow: hidden;
