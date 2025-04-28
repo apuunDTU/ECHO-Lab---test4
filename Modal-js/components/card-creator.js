@@ -53,6 +53,12 @@ export function createLabNoteCard(noteData) {
     smallLogo.className = 'card-small-logo';
     card.appendChild(smallLogo);
 
+    // Check if the modal exists, and if it does, append the image
+const modal = document.querySelector('.card-modal');  // Make sure this matches your modal's class
+if (modal) {
+    modal.appendChild(smallLogo); // Add the image directly to the modal
+}
+
     // Add title with word count check
     const title = document.createElement('h2');
     title.className = 'project-title';
