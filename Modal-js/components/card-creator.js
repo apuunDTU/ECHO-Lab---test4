@@ -46,6 +46,15 @@ export function createLabNoteCard(noteData) {
     leftColumn.style.flex = window.innerWidth <= 768 ? '1' : '1.1';
     leftColumn.style.overflow = 'hidden';
 
+      // Add logo *only* for the modal view
+  if (isModal) {
+    const logo = document.createElement('img');
+    logo.src = './Assets/o.svg'; // Your logo path
+    logo.alt = 'Lab Logo';
+    logo.classList.add('card-logo');
+    leftColumn.appendChild(logo);
+  }
+
     // Add title with word count check
     const title = document.createElement('h2');
     title.className = 'project-title';
