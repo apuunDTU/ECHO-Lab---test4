@@ -505,20 +505,6 @@ body {
     z-index: 1001;
 }
 
-.modal-logo {
-    position: absolute;
-    bottom: 1rem;
-    left: 1.5rem;
-    width: 24px;
-    height: 24px;
-    opacity: 0; /* Hidden by default */
-    transition: opacity 0.3s ease;
-    z-index: 10;
-}
-
-.modal-content .modal-logo {
-    opacity: 1; /* Make the logo visible when inside modal */
-}
 
 /* Event Modal */
 .event-modal {
