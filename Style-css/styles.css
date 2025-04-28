@@ -245,6 +245,16 @@ body {
     overflow: hidden;
 }
 
+/* Styles for the card logo */
+.card-logo {
+  width: 50px; 
+  height: auto; /* Maintain aspect ratio */
+  position: absolute;
+  bottom: 10px; /* Adjust the distance from the bottom as needed */
+  left: 10px;   /* Adjust the distance from the left as needed */
+  z-index: 2;   /* Optional: To ensure it's above other content */
+}
+
 .card-right {
     flex: 1;
     overflow: hidden;
