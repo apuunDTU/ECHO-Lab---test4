@@ -397,6 +397,22 @@ body {
     color: rgba(232, 63, 72, 0.7);
 }
 
+/* Initially hide the logo */
+.card-logo {
+  display: none;
+}
+
+/* Show the logo when the modal is active and contains a 'modal-card' */
+.modal.active .modal-content .modal-card .card-left .card-logo {
+  width: 50px; /* Adjust as needed */
+  height: auto;
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  left: 10px;   /* Adjust as needed */
+  z-index: 2;    /* Ensure it's above other modal content if needed */
+  display: block;
+}
+
 
 /* ==========================================================================
    6. Events Section
